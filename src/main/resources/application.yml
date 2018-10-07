@@ -1,0 +1,23 @@
+# application.yml
+# 마이바티스 세팅
+mybatis:
+    type-aliases-package: com.shop.item.model
+#    type-handlers-package: com.example.typehandler
+    configuration:
+        map-underscore-to-camel-case: true
+        default-fetch-size: 100
+        default-statement-timeout: 30
+    mapper-locations: "**/*_mapper.xml"
+    
+logging:
+  level:
+    org.springframework.boot: DEBUG
+
+#DB접속 정보
+spring:
+  datasource:
+    url: jdbc:mysql://itemshop.cphno6qganog.ap-northeast-2.rds.amazonaws.com/itemShop
+    driverClassName: com.mysql.jdbc.Driver
+    username: itemShop 
+    password: itemShop
+    
