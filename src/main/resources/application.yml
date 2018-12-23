@@ -16,8 +16,8 @@ logging:
 #DB접속 정보
 spring:
   datasource:
-    url: jdbc:mysql://itemshop.cphno6qganog.ap-northeast-2.rds.amazonaws.com/itemShop
+    url: jdbc:mysql://itemshop.c3lehcfdsxdf.ap-northeast-2.rds.amazonaws.com/itemshop
     driverClassName: com.mysql.jdbc.Driver
-    username: itemShop 
-    password: itemShop
+    username: root
+    password: root1234
     
