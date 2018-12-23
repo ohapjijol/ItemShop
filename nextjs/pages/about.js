@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Link from 'next/link';
+import Header from '../components/Header.js';
 
 const styles = theme => ({
   root: {
@@ -19,21 +20,22 @@ function About(props) {
 
   return (
     <div className={classes.root}>
-      <Typography variant="display1" gutterBottom>
-        Material-UI
-      </Typography>
-      <Typography variant="subheading" gutterBottom>
-        about page
-      </Typography>
-      <Typography gutterBottom>
-        <Link href="/">
-          <a>Go to the main page</a>
-        </Link>
-      </Typography>
-      <Button variant="contained" color="primary">
-        Do nothing button
-      </Button>
-    </div>
+	    <Header/>
+		<Typography variant="display1" gutterBottom>
+			Material-UI
+		</Typography>
+		<Typography variant="subheading" gutterBottom>
+			about page
+		</Typography>
+		<Typography gutterBottom>
+			<Link href="/">
+				<a>Go to the main page</a>
+			</Link>
+		</Typography>	
+		<Button variant="contained" color="primary">
+			Do nothing button
+		</Button>
+	</div>
   );
 }
 
