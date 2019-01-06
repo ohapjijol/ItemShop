@@ -1,4 +1,4 @@
-package com.shop.item;
+package com.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

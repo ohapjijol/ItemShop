@@ -1,6 +1,5 @@
 package com.shop.item;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -28,13 +27,6 @@ public class ItemApplicationTests {
 
 	@Test
 	public void contextLoads() {
-//		Item item = sqlSession.selectOne("itemMapper.getItem");
-		List<Item> items=sqlSession.selectList("itemMapper.getItem");
-		assertEquals(items.get(0).getItemId(),1);
-		assertEquals(items.get(0).getItemName(),"황천검");
-		assertEquals(items.get(1).getItemId(),4);
-		assertEquals(items.get(1).getItemName(),"도인비");
-		
 	}
 
 }
