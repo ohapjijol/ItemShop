@@ -14,7 +14,7 @@ public class UserDaoImpl implements UserDao {
 	SqlSession sqlsession;
 
 	@Override
-	public User getuser(String userId) {
-		return sqlsession.selectOne("userMapper.getUser",userId);
+	public User getUser(String userId) {
+		return sqlsession.selectOne("getUser",userId);
 	}
 }
