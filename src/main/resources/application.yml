@@ -1,13 +1,13 @@
 # application.yml
 # 마이바티스 세팅
 mybatis:
-    type-aliases-package: com.shop.item.model
+    type-aliases-package: com.shop.item.model,com.shop.user.model
 #    type-handlers-package: com.example.typehandler
     configuration:
         map-underscore-to-camel-case: true
         default-fetch-size: 100
         default-statement-timeout: 30
-    mapper-locations: "**/*_mapper.xml"
+    mapper-locations: classpath:mappers/*.xml
     
 logging:
   level:
